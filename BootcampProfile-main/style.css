@@ -1,59 +1,50 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Header Styles */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem 5%;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+   padding: 18px;
 }
 
 .logo h3 {
-    font-size: 1.5rem;
+   color: #cf0018; 
 }
 
-.logo span {
-    color: #007bff;
-}
-
-header ul {
+ul {
     display: flex;
-    gap: 2rem;
-    list-style: none;
-    align-items: center;
+    list-style-type: none;
+}
+a {
+    text-decoration:none ;
 }
 
-header a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+li {
+    padding: 8px;
+}
+li a {
+    font-size: small;
+    color:gray
 }
 
+li a :hover{
+    border-bottom: 1px solid #cf0018;
+    
+}
 .contact-icons {
-    display: flex;
-    gap: 1rem;
-    margin-left: 2rem;
+    margin-top: 8px;
+    margin-left: 10px;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 5%;
-    background: #f8f9fa;
+    justify-content: space-around;
 }
 
 .hero-img {
@@ -64,48 +55,14 @@ header a {
     border-radius: 50%;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    color: #007bff;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    margin: 0.5rem 0;
-}
-
 #name {
-    color: #007bff;
+    color: #cf0018;
 }
 
-button {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-/* Tech Stack Section */
-.tech-stack {
-    padding: 5rem 5%;
+.tech-stack{
     text-align: center;
 }
 
-.tech-stack-content {
-    margin-bottom: 3rem;
-}
-
-.tech-stack svg {
-    margin: 1rem;
-}
-
-/* Projects Section */
-.projects {
-    padding: 5rem 5%;
+.projects{
     text-align: center;
-    background: #f8f9fa;
 }
